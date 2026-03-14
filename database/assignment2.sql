@@ -27,10 +27,3 @@ WHERE c.classification_name = 'Sport';
 UPDATE public.inventory
 SET inv_image = REPLACE(inv_image, '/images/', '/images/vehicles/'),
     inv_thumbnail = REPLACE(inv_thumbnail, '/images/', '/images/vehicles/');
-```
-
-Once that's saved, push everything to GitHub:
-```
-git add .
-git commit -m "add database.sql and assignment2.sql files"
-git push
