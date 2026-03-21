@@ -22,6 +22,8 @@ app.set("layout", "./layouts/layout") // not at views root
  * Routes
  *************************/
 app.use(staticRoutes)
+const inventoryRoute = require("./routes/inventoryRoute")
+app.use("/inv", inventoryRoute)
 
 /* ***********************
  * Index Route
